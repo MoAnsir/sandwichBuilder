@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
-import classes from './Layout.css';
+import classes from './Layout.module.css';
 
 import Aux from '../Auxiliary/Auxiliary';
+import MainNav from '../../components/Navigation/MainNav/MainNav';
+import MobileNav from "../../components/Navigation/Mobilenav/Mobilenav";
 
 class Layout extends Component {
 
@@ -12,8 +14,8 @@ class Layout extends Component {
   render () {
     return (
       <Aux>
-        <mainNav>mainNav</mainNav>
-        <mobileNav>mobileNav</mobileNav>
+        <MainNav>mainNav</MainNav>
+        <MobileNav>mobileNav</MobileNav>
       </Aux>
     );
   }
